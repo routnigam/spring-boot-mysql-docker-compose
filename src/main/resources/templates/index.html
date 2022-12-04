@@ -20,19 +20,19 @@
 </head>
 <body>
 
-	<h2>Book Store - Application</h2>
+	<h2>Channel List</h2>
 	<form th:action="@{/}" th:object="${book}" method="POST">
 		<table>
 			<tr>
-				<td>Book Name</td>
+				<td>Channel Name</td>
 				<td><input type="text" th:field="*{bookName}" /></td>
 			</tr>
 			<tr>
-				<td>Author Name</td>
+				<td>Distributor Name</td>
 				<td><input type="text" th:field="*{authorName}" /></td>
 			</tr>
 			<tr>
-				<td>Book Price</td>
+				<td>Price</td>
 				<td><input type="text" th:field="*{bookPrice}" /></td>
 			</tr>
 			<tr>
@@ -49,7 +49,7 @@
 			<th>Id</th>
 			<th>Name</th>
 			<th>Price</th>
-			<th>Author Name</th>
+			<th>Distributor</th>
 		</tr>
 		<tr th:each="book : ${books}">
 			<td th:text="${book.bookId}"></td>
@@ -66,7 +66,7 @@
 
 	<p>Contact Us : + 91 - 7978571223</p>
 	<p>
-		Visit : <a href="http://103.42.125.214"</a>
+		Visit : <a href="http://103.42.125.214/Franchise/lcostats.aspx</a>
 	</p>
 	<p>
 		<b> Copy Rights @ Nigam Star Communication - 2022 </b>
